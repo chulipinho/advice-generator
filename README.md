@@ -20,7 +20,7 @@ Users should be able to get a random advice retrieved from the [Advice Slip API]
 
 - ### Screenshot
 
-![](design\app-desktop.jpg)
+![app screenshot](design\app-desktop.jpg)
 
 ### Links
 
