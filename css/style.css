@@ -3,11 +3,12 @@
 :root {
     --light-cian: hsl(193, 38%, 86%);
     --neon-green: hsl(150, 100%, 66%);
-    --greyish-blue: hsl(217, 19%, 38%);
-    --dark-greyish-blue: hsl(217, 19%, 24%);
+    --greyish-blue: #323a49;
+    --dark-greyish-blue: #1f2533;
 }
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,8 +19,8 @@ body {
 .card {
     background-color: var(--greyish-blue);
     border-radius: 15px;
-    padding: 25px;
-
+    padding: 40px;
+    width: 500px;
 }
 
 .column {
@@ -30,7 +31,7 @@ body {
     flex-direction: column;
 }
 
-.circle {
+#circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,22 +39,38 @@ body {
     height: 50px;
     width: 50px;
     background-color: var(--neon-green);
-    margin-top: 30px;
-    margin-bottom: -50px;
+    margin-bottom: -65px;
+    transition: .1s;
 }
 
-.circle:hover {
-    cursor: pointer;
-}
-object:hover {
-    cursor: pointer;
+.separator {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-image: url("../images/pattern-divider-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 500px;
 }
 
+#circle:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 2px var(--neon-green);
+}
+
+#circle img{
+    transition: transform .1s;
+}
+
+#circle:hover img{
+    transform: scale(1.2);
+}
 
 #title {
     font-family: 'Manrope', sans-serif;
     letter-spacing: 3px;
-    font-size: 15px;
+    font-size: 14px;
     color: var(--neon-green);
 }
 
@@ -63,6 +80,14 @@ object:hover {
     font-family: 'Manrope', sans-serif;
 }
 
-.separator {
-    fill: var(--light-cian);
+@media screen and (max-width: 750px) {
+
+    .card {
+        width: 300px;
+    }
+
+    .separator {
+        background-image: url("../images/pattern-divider-mobile.svg");
+    }
+    
 }
