@@ -8,8 +8,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+- [Built with](#built-with)
 - [Author](#author)
 
 ## Overview
@@ -26,9 +25,7 @@ Users should be able to get a random advice retrieved from the [Advice Slip API]
 
 - [Live Site](https://chulipinho.github.io/advice-generator/)
 
-## My process
-
-### Built with
+## Built with
 
 - HTML5
 - CSS
